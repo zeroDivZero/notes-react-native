@@ -37,3 +37,19 @@ const profile = React.createElement("div", null,
   React.createElement("h3", null, [user.firstName, user.lastName].join(" "))
 );
 ```
+
+## Variable
+
+Can insert value of variable into JSX with `{}`.
+
+```javascript
+const firstName = 'John';
+...
+<Text>My name is {firstName}.</Text>
+```
+
+Variable value can be entirely JSX; useful for dynamically inserting components.
+
+```javascript
+const email = <Text>Email: abc@somecompany.com</Text>;
+```
