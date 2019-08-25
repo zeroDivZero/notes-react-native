@@ -12,6 +12,6 @@ Specifically, RN uses **bridge** to establish bidirectional, async communication
 
 Behaves like *message queue*. First service pushes commands to queue, other one executes them when possible. Ex: JS realm sends async JSON message describing views that must be created, and when native side ready, it creates them.
 
-Another benefit of async: non-blocking, so RN doesn't run on main thread, allowing smooth view management (~6O fps).
+Another benefit of async: non-blocking, so RN doesn't run on main thread, allowing smooth view management (~60 fps).
 
 Built in C/C++, so it runs on many platforms. Embeds Apple's [JavaScriptCore](https://developer.apple.com/documentation/javascriptcore) framework (to evaluate JS within Swift, Obj-C, and C-based apps; part of open-source **WebKit**), which exposes JS VM API. On iOS Obj-C is just extension of C, so bridge can talk native directly. Android requires **Java Native Interface (JNI)**.
