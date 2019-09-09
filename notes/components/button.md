@@ -1,5 +1,7 @@
 # BUTTON
 
+Simple with default styling, not as customizable as `TouchableOpacity`.
+
 ```jsx
 <Button
   onPress={onPressLearnMore}
