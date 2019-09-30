@@ -8,3 +8,9 @@ For displaying different types of images, including network images, static resou
   source={{uri: 'https://facebook.github.io/react-native/img/tiny_logo.png'}}
 />
 ```
+
+## Local File
+
+```jsx
+<Image source={require('../../assets/beach.jpg')} />
+```
