@@ -1,10 +1,10 @@
 # STATE
 
-Track data that change over time. If changes, rerender.
+Track data that change over time. If changes, rerender component (and its children).
 
 For each piece of data, answer 3 questions:
 
-1. What is it?
+1. What is changing?
 2. What type is it?
 3. What is its default value?
 
@@ -19,3 +19,9 @@ const [counter, setCounter] = useState(0);
 ```
 
 Should not modify state directly. When `setCounter` used, rerender component.
+
+`setCounter` does not update `counter` immediately. Updated briefly after. Component re-rendered with updated value.
+
+This is how state is managed in _functional_ component, which is preferred over class-based component.
+
+State can be passed to child as prop.
