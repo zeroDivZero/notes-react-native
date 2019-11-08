@@ -24,4 +24,4 @@ Should not modify state directly. When `setCounter` used, rerender component.
 
 This is how state is managed in _functional_ component, which is preferred over class-based component.
 
-State can be passed to child as prop.
+State can be passed to child as prop. Generally, create state vars in most parent component that needs to read or change them. If child needs to read, simply pass state as value. If child needs to change, pass down callback.
