@@ -13,10 +13,7 @@ State is managed by either hook `useReducer` or `useState`, never both.
 import React, { useReducer } from 'react';
 ...
 const [state, dispatch] = useReducer(reducer, { red: 0, green: 0, blue: 0 });
-  const { red, green, blue } = state;
-
-// call reducer
-dispatch({ type: 'change_red', payload: COLOR_DELTA });
+const { red, green, blue } = state;
 
 // define reducer
 const reducer = (state, action) => {
@@ -26,20 +23,23 @@ const reducer = (state, action) => {
   switch (action.type) {
     case 'change_red':
       let newRed = state.red + action.payload;
-      newRed = newRed > 255 ? 255: (newRed < 0 ? 0 : newRed);
+      newRed = newRed > 255 ? 255 : (newRed < 0 ? 0 : newRed);
       return { ...state, red: newRed };
     case 'change_green':
         let newGreen = state.green + action.payload;
-        newGreen = newGreen > 255 ? 255: (newGreen < 0 ? 0 : newGreen);
+        newGreen = newGreen > 255 ? 255 : (newGreen < 0 ? 0 : newGreen);
       return { ...state, green: newGreen };
     case 'change_blue':
         let newBlue = state.blue + action.payload;
-        newBlue = newBlue > 255 ? 255: (newBlue < 0 ? 0 : newBlue);
+        newBlue = newBlue > 255 ? 255 : (newBlue < 0 ? 0 : newBlue);
       return { ...state, blue: newBlue };
     default:
       return state;
   }
 };
+
+// call reducer
+dispatch({ type: 'change_red', payload: COLOR_DELTA });
 ```
 
 ## Action Object Convention

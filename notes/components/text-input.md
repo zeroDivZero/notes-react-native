@@ -4,7 +4,7 @@ For inputting text via keyboard. Use props to configure features like auto-corre
 
 By default has minimal style besides height. Not visible against white background.
 
-Subscribe to `onChangeText` events to read user input. There are also other events like `onSubmitEditing` and `onFocus`. Minimal ex:
+Subscribe to event `onChangeText` to read user input. There are also other events like `onSubmitEditing` and `onFocus`. Minimal ex:
 
 ```javascript
 import React, { Component } from 'react';
