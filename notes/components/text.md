@@ -1,4 +1,4 @@
-# TEXT
+# `Text`
 
 For displaying text. Supports nesting, styling, and touch handling.
 
