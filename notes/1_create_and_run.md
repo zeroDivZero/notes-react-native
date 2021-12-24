@@ -3,15 +3,23 @@
 ## Create
 
 ```zsh
-react-native init <project name>
+npx react-native init <project name>
 ```
 
 ## Run
 
 In project folder:
 
+Step 1: Start Metro:
+
 ```zsh
-react-native run-ios
+npx react-native start
+```
+
+Step 2: Start app:
+
+```zsh
+npx react-native run-ios
 ```
 
 First time takes time to build app. If app doesn't automatically launch in simulator, browse in simulator and open manually.
