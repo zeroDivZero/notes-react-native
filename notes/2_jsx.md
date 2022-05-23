@@ -40,16 +40,19 @@ const profile = React.createElement("div", null,
 
 ## Variable
 
-Can insert value of variable into JSX with `{}`.
+Can insert value of variable with `{}`. Can assign entire JSX to variable.
 
-```javascript
-const firstName = 'John';
-...
-<Text>My name is {firstName}.</Text>
-```
+```jsx
+const OneComponent = () => {
+  const firstName = 'John';
+  const email = <Text>abc@somecompany.com</Text>;
 
-Variable value can be entirely JSX; useful for dynamically inserting components.
-
-```javascript
-const email = <Text>Email: abc@somecompany.com</Text>;
+  return (
+  <View>
+    <Text>Hi there, {firstName}.</Text>
+    <Text>Please contact:</Text>
+    {email}
+  </View>
+  );
+};
 ```

@@ -1,4 +1,4 @@
-# FLATLIST
+# `FlatList`
 
 Performant interface for rendering flat list. Supports many features like header, footer, separator, pull-to-refresh, multi-column, horizontal mode, etc.
 
