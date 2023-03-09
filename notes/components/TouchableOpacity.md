@@ -1,4 +1,4 @@
-# TOUCHABLEOPACITY
+# `TouchableOpacity`
 
 Customizable component that can detect touch on almost any kind of element.
 

@@ -1,4 +1,4 @@
-# TEXTINPUT
+# `TextInput`
 
 For inputting text via keyboard. Use props to configure features like auto-correction, auto-capitalization, placeholder text, and different keyboard types (e.g., numeric keypad).
 

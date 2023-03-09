@@ -1,4 +1,4 @@
-# BUTTON
+# `Button`
 
 Simple with default styling, not as customizable as `TouchableOpacity`.
 
