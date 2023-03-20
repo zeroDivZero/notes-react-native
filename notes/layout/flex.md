@@ -8,6 +8,8 @@ Direction children are laid out.
 
 * `column` (default): Children laid out vertically, top to bottom.
 * `row`: Children laid out horizontally, left to right.
+* `column-reverse`: Children laid out vertically, bottom to top.
+* `row-reverse`: Children laid out horizontally, right to left.
 
 ## `alignItems`
 
